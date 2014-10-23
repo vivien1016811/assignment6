@@ -5,11 +5,14 @@
    E-mail: vivien_chow@student.uml.edu
    Assignment 6: Creating an Interactive Dynamic Table
    Date Created: October 21, 2014
-   Description: This is to style the webpage.
+   Description: This is to validate input and print out the dynamic table.
    Updated by Vivien Chow on October 21, 2014 at 5:38 PM
 */
 
-/*This javascript file is created with help from Dean Marsinelli. */
+/*This javascript file is created with the basic idea of using arrays to print out 
+  a table just like in C programming and with the help from Dean Marsinelli. Some 
+  codes came from the inclass exercise for creating a form and validating the input. 
+*/
 
 /*The following function is the main function used for this multiplication table.*/
 $(document).ready( function() {
@@ -89,19 +92,16 @@ function Output_result(cArr, rArr) {
     
     /*The following lines are for printing out the first row of the table. */
     var firstrow = "<tr><td>*</td>";
-    for (var j = 0; j < cArr.length; j++)
-    {
+    for (var j = 0; j < cArr.length; j++) {
       firstrow += "<td class='firstrow'>" + cArr[j] + "</td>";
     }
     firstrow += "</tr>"
     $("#result").append(firstrow);
     
     /*The following lines are for printing out the rest of the table. */
-    for ( i = 0; i < rArr.length; i++)
-    {
+    for ( i = 0; i < rArr.length; i++) {
       var row = "<tr><td>" + rArr[i] + "</td>";
-      for ( j = 0; j < cArr.length; j++)
-      {
+      for ( j = 0; j < cArr.length; j++) {
        row += "<td>" + rArr[i] * cArr[j] + "</td>";
       }
       row += "</tr>";
@@ -110,7 +110,7 @@ function Output_result(cArr, rArr) {
 }
 
 /*The following function creates an array. */
-function makeArr(start, end){
+function makeArr(start, end) {
   
   var array = [];
   
@@ -131,6 +131,5 @@ function makeArr(start, end){
     }
   }
   return array;
-  
 }
 
