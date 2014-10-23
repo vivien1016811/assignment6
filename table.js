@@ -9,6 +9,8 @@
    Updated by Vivien Chow on October 21, 2014 at 5:38 PM
 */
 
+/*This javascript file is created with help from Dean Marsinelli. */
+
 /*The following function is the main function used for this multiplication table.*/
 $(document).ready( function() {
   /*Once the user submitted, the following function will be executed. */
