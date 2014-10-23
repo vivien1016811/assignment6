@@ -118,8 +118,8 @@ function makeArr(start, end){
   /*2 different cases as user may input a start value that is larger than the end value. */
   if (start < end) {
     for (var i = 0; i <= arr_length; i++) {
-    array[i] = start;
-    start = start + 1;
+       array[i] = start;
+       start = start + 1;
     }
   }
   else {
