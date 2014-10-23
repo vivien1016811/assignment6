@@ -12,8 +12,7 @@
 
 /*Set the properties of the name banner on top of the page.*/
 /*Background image of the banner is from the webpage dreamstime.com .*/
-.banner 
-{
+.banner{
    top: 220px;
    margin-left: 200px;
    margin-right: 200px;
@@ -160,19 +159,19 @@ a:link, a:visited{
 }
 
 /*Set properties of vistied links.*/
-a:visited {
+a:visited{
    color: slateblue ;
 }
 
 /*Set link properties using dynamic pseudo-classes for links.*/
-a:hover {
+a:hover{
    text-decoration: none;
    color: white;
    background-color: skyblue;
 }
 
 /*Set properties of active links.*/
-a:active {
+a:active{
    color: navy;
    background-color: skyblue;
 }
