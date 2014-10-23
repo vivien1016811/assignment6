@@ -1,0 +1,180 @@
+/*
+   File: /~vchow/assignment6/css/styling.css/
+   Author: Vivien Chow, UMass Lowell Computer Science Student
+   Course: 91.461 GUI Programming I
+   E-mail: vivien_chow@student.uml.edu
+   Assignment 5: Formatting Dynamic Text
+   Date Created: September 21, 2014
+   Description: This is to style the webpage.
+   Updated by Vivien Chow on October 6, 2014 at 5:38 PM
+*/
+
+
+/*Set the properties of the name banner on top of the page.*/
+/*Background image of the banner is from the webpage dreamstime.com .*/
+.banner 
+{
+   top: 220px;
+   margin-left: 200px;
+   margin-right: 200px;
+}
+
+/*Set the background color of the page.*/
+body{
+   background-color: #D7DFF9;
+}
+
+/*Set text properties of different sections of the page.*/
+h1, h2, h3, p{
+   font-family: 'Happy Monkey', cursive; /*Font used from google.com/fonts.*/
+   font-weight: bold;
+   width: 50%;
+}
+
+/*Set the properties of the prompt div. */
+#prompt{
+   padding: 30px;
+   font-family: 'Happy Monkey', cursive; /*Font used from google.com/fonts.*/
+   font-weight: bold;
+   color: royalblue;
+}
+
+/*Set the properties of the left div. */
+#left{
+   float: left;
+}
+
+/*Set the properties of the area around the dynamic table. */
+#dynamicTab{
+   padding-left: 40px;
+}
+
+/*Set the properties of the dynamic table. */
+#Result{
+   border: 2px solid white;
+}
+
+/*Set the properties of the cells in the table. */
+td{
+   text-align: center;
+   padding: 5px;
+   color: white;
+   border: 1px solid #99ccff;
+   background-color: #99ccff;
+}
+
+/*Set the properties of the first row of the table. */
+.firstrow{
+   border: #9966ff;
+   border-bottom: #9966ff;
+   color: white;
+   background-color: #9966ff;
+   text-align: center;
+   padding: 5px;
+}
+
+/*Set the properties of the first cell on the first row. */
+tbody tr:first-child td:first-child{
+   border: #9966ff;
+   color: white;
+   background-color: #9966ff;
+   text-align: center;
+   padding: 5px;
+}
+
+/*Set the properties of the first column. */
+tr td:first-child{
+   border: #9966ff;
+   border-right: #9966ff;
+   color: white;
+   background-color: #9966ff;
+}
+
+/*Set the properties of all the span (error messages) used. */
+#right span{
+   color: red; 
+}
+
+/*Set properties of first level headers.*/
+h1{
+   color: #19198d;
+   font-size: 25px;
+   text-align: center;
+   
+}
+
+/*Set properties of second level headers.*/
+h2{
+   color: #384CC3;
+   font-size: 16px; 
+}
+
+/*Set properties of texts in p(paragraph) tags.*/
+p{
+   color: royalblue;
+}
+
+/*Set properties of texts in unordered lists.*/
+ul, li{
+   color: royalblue;
+   font-size: large;
+}
+
+/*Set properties of my family image.*/
+#familyImage{
+   float: right;
+   border: 3px dotted blue;
+   padding: 10px;
+}
+
+/*Set properties to links in body content.*/
+ul{
+   font-family: 'Happy Monkey', cursive; /*Font used from google.com/fonts.*/
+}
+
+/*Set properties of the navigation div.*/
+.navigation ul{
+   color: blue;
+   font-size: large;
+   border-bottom: 4px solid white;
+   height: 45px;
+   width: 100%;
+   padding: 0;
+   top: 0;
+   font: 15px "Tahoma", "Helvetica", "sans-serif";
+   list-style: none;   /*This removes the 'bullet points'. */
+   text-align: center;
+}
+
+/*Set specific properties to navigation links' items.*/
+.navigation li{
+   display: inline-block;  /*This aligns the list items next to each other. */
+   padding-right: 10px;  
+   border-right: 3px solid white; /*This separates each item from another. */
+}
+
+/*Set properties of any links, including navigation links on the page.*/
+a:link, a:visited{
+   color: #2e8ae6;
+   font-weight: bold;
+}
+
+/*Set properties of vistied links.*/
+a:visited {
+   color: slateblue ;
+}
+
+/*Set link properties using dynamic pseudo-classes for links.*/
+a:hover {
+   text-decoration: none;
+   color: white;
+   background-color: skyblue;
+}
+
+/*Set properties of active links.*/
+a:active {
+   color: navy;
+   background-color: skyblue;
+}
+
+

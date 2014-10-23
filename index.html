@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <title>Creating an Interactive Dynamic Table</title>
+    <meta charset="utf-8">
+  
+    <!--
+      File: /~vchow/assignment6/index.html
+      Author: Vivien Chow, UMass Lowell Computer Science Student
+      Course: 91.461 GUI Programming I
+      E-mail: vivien_chow@student.uml.edu
+      Assignment 6: Formatting Dynamic Text
+      Date Created: September 21, 2014
+      Description: This is the homepage for my GUI Programming class.
+                   This page is for Assignment 6 which is creating
+                   an interactive dynamic table. 
+      Updated by Vivien Chow on October 23rd, 2014 at 3:36 PM
+    -->
+     
+    <!-- Link to google fonts for happy monkey fonts used for the poem. -->
+    <link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
+     
+    <!-- Link to CSS for all webpages. -->
+    <link rel="stylesheet" type="text/css" href="/~vchow/assignment6/css/styling.css">
+     
+    <!-- Loads the jQuery library from the Google Content Delivery Network. -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <script src="table.js"></script>
+  </head>
+    
+  <!-- Contents of the whole website is styled as followed: -->
+  <body>
+    <!-- Name banner for the page. -->
+    <div class="banner"><img src="banner_name.jpg" alt="nameBanner">
+    </div>
+    <!-- End of banner div. -->
+
+    <div class="navigation">
+      <!-- List of navigation links. -->
+      <ul>
+        <li><a href="http://weblab.cs.uml.edu/~vchow/assignment6/index.html">Home</a></li>
+        <li><a href="http://weblab.cs.uml.edu/~vchow/assignment6/assignments.html">Assignments</a></li>
+        <li><a href="http://weblab.cs.uml.edu/~vchow/assignment6/contact.html">Contact</a></li>
+        <!-- W3C validation icon, code provided by W3C CSS Validation Service. -->
+        <li><a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                 src="http://jigsaw.w3.org/css-validator/images/vcss"
+                 alt="Valid CSS!" />
+            </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End of navigation div. -->
+    
+    <div id="prompt">
+      <h1>Multiplication Table</h1>
+      <h2>Please fill out the following.</h2>
+    <!-- Prompt user for the start and end values for column and row respectively. -->
+      <div id="left">
+        Start value for column:
+      <br><br>
+        End value for column:
+      <br><br>
+        Start value for row:
+      <br><br>
+        End value for row:
+      <br><br>
+      </div>
+      
+      <div id="right">
+        <form id="frm" action="javascript:void(0)">
+          <input type="text" id="colStartVal" name="colStartVal"> <span id="err1"></span><br><br>
+          <input type="text" id="colEndVal" name="colEndVal"> <span id="err2"></span><br><br>
+          <input type="text" id="rowStartVal" name="rowStartVal"> <span id="err3"></span> <br><br>
+          <input type="text" id="rowEndVal" name="rowEndVal"> <span id="err4"></span><br><br>
+          <input type="submit" value="Submit Values">
+        </form>
+      </div>
+      <!-- End of right div. -->
+    </div> 
+    <!-- End of prompt div. -->
+    
+    <div id="dynamicTab">
+       <table>
+       <!-- The dynamic multiplication table will be placed here. -->
+          <tbody id="result">
+            
+          </tbody>
+          </table>
+          
+    </div> 
+    <!-- End of dynamicTab div. -->
+
+
+  </body>
+</html>
